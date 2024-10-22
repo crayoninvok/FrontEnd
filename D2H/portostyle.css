@@ -91,3 +91,21 @@ body {
 #tombol .gambar3:hover {
     transform: scale(1.1);
 }
+
+.kontak{
+    height: 100px;
+    width: 100px;
+    background-image: url(./smartphone.svg);
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: 4px solid black;
+    border-radius: 75%;
+}
+
+.kontak:hover{
+    cursor: pointer;
+}
