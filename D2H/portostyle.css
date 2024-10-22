@@ -1,0 +1,93 @@
+
+body {
+    background-image: url(./BGHD1.gif);
+    justify-content: center; 
+    background-size: cover;
+    margin: 0; 
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    height: 80px;
+    background-color: burlywood;
+    margin: 0; 
+    border: none;
+    font-family: 'Sixtyfour Convergence', serif;
+  
+}
+
+.menu {
+    background-color: transparent; 
+    border: none; 
+    margin: 0; 
+}
+
+.judul{
+    font-size: xx-large;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+#tombol {
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2, 180px);
+    position: relative;
+    top: 50px;
+    left: 20%;
+    border: 0;
+    border-radius: 50%;
+    
+}
+
+.gambar1{
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+
+.gambar1{
+    background-image: url(./1.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.gambar2{
+    background-image: url(./2.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.gambar3{
+    background-image: url(./3.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+#tombol .gambar1:hover {
+    transform: scale(1.1);
+}
+#tombol .gambar2:hover {
+    transform: scale(1.1);
+}
+#tombol .gambar3:hover {
+    transform: scale(1.1);
+}
