@@ -1,0 +1,78 @@
+
+ body{
+    margin: 10;
+ }
+ 
+ 
+ /* Relativ */
+.Reg{
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    color: aqua;
+    position: relative;
+    left: 0%;
+    top: 0px;
+    z-index: 1;
+}
+ /* Absolut harus ada relative jadi ada di dalamnya */
+.Promo{
+    position: absolute;
+    background-color: yellow;
+    color: black;
+    padding: 2px 10px ;
+    border: 1px solid green;
+    border-radius: 20px;
+    rotate: 45deg;
+    top: -5px;
+    right: -25px;
+}
+
+.Contact{
+    height: 70px;
+    width: 70px;
+    background-color: greenyellow;
+    color: black;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    align-content: center;
+    border-radius: 70%;
+    border: 1px groove black;
+}
+
+.Navbar{
+    height: 80px;
+    width: 100%;
+    background-color: chocolate;
+    color: aquamarine;
+    align-content: center;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.Navbar2 {
+    height: 80px;
+    width: 105%;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+    align-content: center;
+    position: sticky;
+    top: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .Navbar{
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar{
+        background-color: pink;
+    }
+}
