@@ -8,7 +8,6 @@ function Contact() {
                 </div>
             </div>
 
-            {/* Bottom Row with 1 Column */}
             <div className="flex justify-center">
                 <div className="w-[100%] h-[40vh] bg-fuchsia-800 flex justify-center items-center">
                     <span className="text-white">Single Column Below</span>

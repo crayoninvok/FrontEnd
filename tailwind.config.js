@@ -1,4 +1,5 @@
 import daisyui from 'daisyui';
+import { transform } from 'typescript';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -15,7 +16,18 @@ export default {
         'open-sans': ['"Rubik"', 'sans-serif'],
       },
     },
+
+      animation: {
+        "loop-scroll": "loop-scroll 25s linear infinite",
+      },
+      keyframes :{
+        "loop-scroll":{
+          '0%': { transform: "translateX(100%)" },
+          '100%': { transform: "translateX(-100%)"},
+        },
+      },
   },
+
   plugins: [
     daisyui
   ],

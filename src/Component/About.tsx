@@ -1,70 +1,99 @@
-import wisuda2 from '../assets/wisuda2.jpeg';
-import fsg from '../assets/fsg.jpg';
-import apateu2 from '../assets/apateu2.gif';
-import zaki3 from '../assets/zaki3.jpeg'
+import apateu from '../assets/apateu2.gif';
+import avatarZ from '../assets/fotozaki1.jpeg'
+import wisuda1 from '../assets/wisuda1.jpg'
+import wisuda2 from '../assets/wisuda2.jpeg'
+import fsg1 from '../assets/fsg.jpg'
 
 function About() {
-    return (
-      <div className="hero bg-base-200 min-h-screen flex flex-col items-center">
-       
-        <div 
-          className="absolute top-16 left-0 right-0 mx-auto text-center h-[300px] text-gray-50" 
-          style={{
-            backgroundImage: `url(${apateu2})`, 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center 35%', 
-            backgroundRepeat: 'no-repeat' 
-          }}
-        >
-          <p className="font-serif mt-[5rem] font-extrabold mr-[10px] text-5x1">A little bit about me</p>
-          <p className="font-mono text-8xl mt-[10px] ml"> WHO AM I ?</p>
-        </div>
-  
-        <div className="flex w-full h-screen">
-          <div className="flex items-center justify-center w-1/3 bg-rose-400">
-            <div className="card glass w-96 mt-[22rem] hover:scale-105 transition-transform duration-200 hover:text-blue-600">
-                <figure>
-                    <img src={wisuda2} alt="wisuda!" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">Campus Life</h2>
-                    <p>Want to see ITS Campus Life?</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary"><a href="https://www.youtube.com/watch?v=R3vMnUF8bWk">Click Here</a></button>
+  return (
+      <div className="flex-col w-full min-h-screen h-full bg-rose-500">
+          <div className="w-full h-[30vh] flex flex-col text-center justify-center items-center"
+            style={{
+              backgroundImage: `url(${apateu})`, 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center 30%', 
+              backgroundRepeat: 'no-repeat' 
+            }}>
+              <p className="text-white mt-4 text-[17px] md:text-[23px] font-semibold font-open-sans">Get In Touch w/ me</p>
+              <p className="text-white mt-5 text-[30px] md:text-[70px] font-semibold font-open-sans">WHO AM I?</p> 
+          </div>
+
+      <div className='flex flex-col md:flex-row gap-5 justify-between items-center top-0 w-full px-3 md:px-3'>
+      <a href="#" className="group relative block bg-black mt-10 h-60 w-[50%]">
+                  <img
+                    alt="gg"
+                    src={avatarZ}
+                    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                  />
+
+                  <div className="relative p-4 sm:p-6 lg:p-8">
+                    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Developer</p>
+
+                    <p className="text-xl font-bold text-white sm:text-2xl">Dzaky's</p>
+
+                    <div className="mt-32 sm:mt-48 lg:mt-64">
+                      <div
+                        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                      >
+                
+                      </div>
                     </div>
-                </div>
+                  </div>
+                </a>
+                
+            <div className='text-center font-mono mt-3'>
+                <p>
+                Hi, my name  Dzaky Athariq Ferreira. You can call me "Jak"Jek"Pew" or whatever you like to call me. I am an 
+                independent person with background skill in Instrumentation Engineering. I studied at the Institute Technology Sepuluh Nopember in Surabaya. 
+                After I graduated in 2021, I started working as a marine radio communication & navigation technician and my last posision in the company is VDR Engineer & Marine Radio Inspector. 
+                I worked in there for 2 half years until August 2024. Now, I'm studying to become a full-stack web developer at Purwadhika campus Bandung.
+                </p>
+
             </div>
-          </div>
 
-          <div className="flex flex-col items-center justify-center w-1/3 bg-rose-400 m">
-            <p className="w-[70%] mx-auto mt-[18rem] text-center text-zinc-900">
-                I am an independent person with background skill in Instrumentation Engineering. I studied at the Institute Technology Sepuluh Nopember in Surabaya. After I graduated in 2021, I started working as a marine radio navigation technician. I worked for 2 years until August 2024. Now, I'm studying to become a full-stack web developer at Purwadhika campus Bandung.
-            </p>
-              <div className="avatar justify-center mt-[3rem]">
-                <div className="ring-offset-base-100 w-[170px] rounded-full ring ring-offset-2 ring-slate-500">
-                <img src={zaki3} />
-                </div>
-              </div>
-          </div>
-
-
-          <div className="flex items-center justify-center w-1/3 bg-rose-400">
-            <div className="card glass w-96 mt-[22rem] hover:scale-105 transition-transform duration-200 hover:text-blue-600">
-                <figure>
-                    <img src={fsg} alt="wisuda!" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">Radio Surveyor Life</h2>
-                    <p>Want to see how work in Furuno?</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary hover:button"><a href="https://www.furuno.id/">Click Here</a></button>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
       </div>
-    );
+
+      <div className='flex flex-col items-center justify-center mt-[20px] bg-rose-500'>
+
+        <p className="w-full text-center py-2">My Experience</p>
+
+            <div className='flex space-x-1 animate-loop-scroll gap-4 mt-5'>
+                <a href="#" className="block">
+                      <img
+                        alt="w"
+                        src={wisuda1}
+                        className="h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72"
+                      />
+
+                      <div className="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+                        <strong className="font-medium">Institute Technology Sepuluh Nopember</strong>
+
+                        <span className="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
+
+                        <p className="mt-0.5 opacity-50 sm:mt-0">Instrumentation Engineering</p>
+                      </div>
+                    </a>
+                <a href="#" className="block">
+                      <img
+                        alt="w"
+                        src={fsg1}
+                        className="h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72"
+                      />
+
+                      <div className="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+                        <strong className="font-medium">Furuno Electrict Indonesia</strong>
+
+                        <span className="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
+
+                        <p className="mt-0.5 opacity-50 sm:mt-0">Radio Engineer</p>
+                      </div>
+                    </a>
+            </div>
+      </div>
+    </div>
+
+
+  );
 }
 
 export default About;

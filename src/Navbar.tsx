@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <div className="navbar bg-rose-500 px-5 md:px-10 flex justify-between items-center fixed top-0 w-full z-10">
+        <div className="navbar bg-rose-500 px-5 md:px-10 flex justify-between items-center top-0 w-full z-10 fixed">
             <div className='flex-none'>
                 <img src={logo} alt="logo" className="w-8 h-8" />
             </div>
