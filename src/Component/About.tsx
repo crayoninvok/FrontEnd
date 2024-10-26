@@ -1,7 +1,6 @@
 import apateu from '../assets/apateu2.gif';
 import avatarZ from '../assets/fotozaki1.jpeg'
 import wisuda1 from '../assets/wisuda1.jpg'
-import wisuda2 from '../assets/wisuda2.jpeg'
 import fsg1 from '../assets/fsg.jpg'
 
 function About() {
