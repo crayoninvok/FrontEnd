@@ -13,7 +13,7 @@ function About() {
               backgroundPosition: 'center 30%', 
               backgroundRepeat: 'no-repeat' 
             }}>
-              <p className="text-white mt-4 text-[17px] md:text-[23px] font-semibold font-open-sans">Get In Touch w/ me</p>
+              <p className="text-white mt-4 text-[13px] md:text-[20px] font-semibold font-open-sans">Get Know About Me</p>
               <p className="text-white mt-5 text-[30px] md:text-[70px] font-semibold font-open-sans">WHO AM I?</p> 
           </div>
 
