@@ -14,13 +14,13 @@ function Navbar() {
     };
 
     return (
-        <div className="navbar bg-rose-500 px-5 md:px-10 flex justify-between items-center top-0 w-full z-10 fixed">
+        <div className="navbar bg-transparent px-5 md:px-10 flex justify-between items-center top-0 w-full z-10 fixed">
             <div className='flex-none'>
                 <img src={logo} alt="logo" className="w-8 h-8" />
             </div>
 
-            {/* Desktop Menu */}
-            <ul className='hidden md:flex flex-1 justify-center gap-5'>
+
+            <ul className='hidden md:flex flex-1 justify-center gap-5 text-black'>
                 <li className="btn btn-ghost text-lg md:text-xl">
                     <Link to="/">Home</Link>
                 </li>
@@ -39,13 +39,13 @@ function Navbar() {
             <div className="md:hidden flex flex-1 justify-end relative z-30">
                 <button 
                     onClick={toggleMenu} 
-                    className="cursor-pointer text-2xl px-2 py-1">
+                    className="cursor-pointer text-2xl px-2 py-1 text-black font-bold">
                     ☰
                 </button>
 
                 {/* Mobile Menu Dropdown */}
                 {menuOpen && (
-                    <ul className="absolute right-0 top-full mt-1 bg-rose-500 p-4 rounded shadow-lg flex flex-col gap-2 w-40 z-30">
+                    <ul className="absolute right-0 top-full mt-1 text-black p-4 rounded shadow-lg flex flex-col gap-2 w-40 z-30 backdrop-blur-md">
                         <li className="btn btn-ghost text-lg">
                             <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
                         </li>
