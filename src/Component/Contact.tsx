@@ -1,17 +1,21 @@
-function Contact(){
-    return(
-        <div className="hero bg-base-200 min-h-screen">
-  <div className="hero-content text-center">
-    <div className="max-w-md">
-      <h1 className="text-5xl font-bold">Hello there</h1>
-      <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button className="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
-    )
+function Contact() {
+    return (
+        <div className="flex flex-col">
+            {/* Top Row with 3 Columns */}
+            <div className="flex justify-center">
+                <div className="w-[100%] h-[60vh] bg-fuchsia-500 flex justify-center">
+                    <span className="text-white mt-[7vh] font-semibold text-[43px] font-open-sans">Get In Touch w/ me</span>
+                </div>
+            </div>
+
+            {/* Bottom Row with 1 Column */}
+            <div className="flex justify-center">
+                <div className="w-[100%] h-[40vh] bg-fuchsia-800 flex justify-center items-center">
+                    <span className="text-white">Single Column Below</span>
+                </div>
+            </div>
+        </div>
+    );
 }
-export default Contact
+
+export default Contact;

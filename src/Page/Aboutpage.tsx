@@ -1,4 +1,5 @@
 import About from "../Component/About"
+import Footer from "../Component/Footer"
 import Navbar from "../Navbar"
 
 function Aboutpage(){
@@ -6,6 +7,7 @@ function Aboutpage(){
         <div>
     <Navbar />
     <About />
+    <Footer />
     </div>
     )
 }

@@ -8,7 +8,12 @@ export default {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        'rubik': ['"Rubik Wet Paint"', 'cursive'],
+        'sixtyfour': ['"Sixtyfour Convergence"', 'sans-serif'],
+        'days': ['"Days One"', 'sans-serif'],
+        'open-sans': ['"Rubik"', 'sans-serif'],
+      },
     },
   },
   plugins: [

@@ -36,7 +36,7 @@ function About() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center w-1/3 bg-rose-300 m">
+          <div className="flex flex-col items-center justify-center w-1/3 bg-rose-400 m">
             <p className="w-[70%] mx-auto mt-[18rem] text-center text-zinc-900">
                 I am an independent person with background skill in Instrumentation Engineering. I studied at the Institute Technology Sepuluh Nopember in Surabaya. After I graduated in 2021, I started working as a marine radio navigation technician. I worked for 2 years until August 2024. Now, I'm studying to become a full-stack web developer at Purwadhika campus Bandung.
             </p>
@@ -54,7 +54,7 @@ function About() {
                     <img src={fsg} alt="wisuda!" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">Furuno Employee</h2>
+                    <h2 className="card-title">Radio Surveyor Life</h2>
                     <p>Want to see how work in Furuno?</p>
                     <div className="card-actions justify-end">
                     <button className="btn btn-primary hover:button"><a href="https://www.furuno.id/">Click Here</a></button>
