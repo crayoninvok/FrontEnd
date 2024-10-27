@@ -1,4 +1,4 @@
-import video from "../assets/backHD.mp4";
+
 import prx from "../assets/Paper_Rex_darkmode.png";
 import bg2 from '../assets/bg2.mp4'
 
