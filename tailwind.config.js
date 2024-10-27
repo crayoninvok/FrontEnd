@@ -18,7 +18,7 @@ export default {
     },
 
       animation: {
-        "loop-scroll": "loop-scroll 25s linear infinite",
+        "loop-scroll": "loop-scroll 35s linear infinite",
       },
       keyframes :{
         "loop-scroll":{
@@ -26,6 +26,7 @@ export default {
           '100%': { transform: "translateX(-100%)"},
         },
       },
+      
   },
 
   plugins: [

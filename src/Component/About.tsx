@@ -2,6 +2,11 @@ import apateu from '../assets/apateu2.gif';
 import avatarZ from '../assets/fotozaki1.jpeg'
 import wisuda1 from '../assets/wisuda1.jpg'
 import fsg1 from '../assets/fsg.jpg'
+import fotojalan1 from '../assets/fotojalan1.jpeg'
+import fotojalan2 from '../assets/fotojalan2.jpeg'
+import fotojalan3 from '../assets/fotojalan3.jpeg'
+import fotojalan4 from '../assets/fotojalan4.jpeg'
+import fotojalan5 from '../assets/fotojalan5.jpeg'
 
 function About() {
   return (
@@ -13,12 +18,12 @@ function About() {
               backgroundPosition: 'center 30%', 
               backgroundRepeat: 'no-repeat' 
             }}>
-              <p className="text-white mt-4 text-[13px] md:text-[20px] font-semibold font-open-sans">Get Know About Me</p>
+              <p className="text-white mt-5 text-[13px] md:text-[20px] font-semibold font-open-sans">Get Know About Me</p>
               <p className="text-white mt-5 text-[30px] md:text-[70px] font-semibold font-open-sans">WHO AM I?</p> 
           </div>
 
       <div className='flex flex-col md:flex-row gap-5 justify-between items-center top-0 w-full px-3 md:px-3'>
-      <a href="#" className="group relative block bg-black mt-10 h-60 w-[50%]">
+      <a href="#" className="group relative block bg-black mt-10 h-70 w-[50%]">
                   <img
                     alt="gg"
                     src={avatarZ}
@@ -40,55 +45,48 @@ function About() {
                   </div>
                 </a>
                 
-            <div className='text-center font-mono mt-3'>
+            <div className='text-center font-days mt-3 text-white'>
                 <p>
                 Hi, my name  Dzaky Athariq Ferreira. You can call me "Jak"Jek"Pew" or whatever you like to call me. I am an 
                 independent person with background skill in Instrumentation Engineering. I studied at the Institute Technology Sepuluh Nopember in Surabaya. 
                 After I graduated in 2021, I started working as a marine radio communication & navigation technician and my last posision in the company is VDR Engineer & Marine Radio Inspector. 
                 I worked in there for 2 half years until August 2024. Now, I'm studying to become a full-stack web developer at Purwadhika campus Bandung.
                 </p>
+                <br />
+                <hr className='mx-10'/>
 
             </div>
 
       </div>
+            <p className='w-full text-center py-2 text-[20px] md:text-[40px] text-white font-days'>This is my Life Album</p>
+      <div className="flex space-x-1 animate-loop-scroll gap-4 mt-5">
+    
+          {[ 
+            { src: wisuda1, title: "ITS Surabaya", desc: "Graduation Day" },
+            { src: fsg1, title: "Furuno SG", desc: "VDR Certification" },
+            { src: fotojalan1, title: "Bahodopi Anch.", desc: "VDR APT" },
+            { src: fotojalan3, title: "Office Jakarta", desc: "Class Audit" },
+            { src: fotojalan2, title: "Bahodopi Anch.", desc: "Life at sea" },
+            { src: fotojalan4, title: "PaxOcean Batam", desc: "VDR Maintenance" },
+            { src: fotojalan5, title: "Purwadhika Bandung", desc: "Fullstack WebDev Program" },
+          ].map((item, index) => (
+            <a href="#" key={index} className="block">
+              <img
+                alt={item.title}
+                src={item.src}
+                className="h-64 w-64 rounded-bl-3xl rounded-tr-3xl object-cover"
+              />
 
-      <div className='flex flex-col items-center justify-center mt-[20px] bg-rose-500'>
+              <div className="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+                <strong className="font-bold">{item.title}</strong>
 
-        <p className="w-full text-center py-2">My Experience</p>
+                <span className="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
 
-            <div className='flex space-x-1 animate-loop-scroll gap-4 mt-5'>
-                <a href="#" className="block">
-                      <img
-                        alt="w"
-                        src={wisuda1}
-                        className="h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72"
-                      />
-
-                      <div className="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
-                        <strong className="font-medium">Institute Technology Sepuluh Nopember</strong>
-
-                        <span className="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
-
-                        <p className="mt-0.5 opacity-50 sm:mt-0">Instrumentation Engineering</p>
-                      </div>
-                    </a>
-                <a href="#" className="block">
-                      <img
-                        alt="w"
-                        src={fsg1}
-                        className="h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72"
-                      />
-
-                      <div className="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
-                        <strong className="font-medium">Furuno Electrict Indonesia</strong>
-
-                        <span className="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
-
-                        <p className="mt-0.5 opacity-50 sm:mt-0">Radio Engineer</p>
-                      </div>
-                    </a>
-            </div>
-      </div>
+                <p className="mt-0.5 opacity-90 sm:mt-0">{item.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
     </div>
 
 
