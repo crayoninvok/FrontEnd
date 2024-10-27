@@ -1,5 +1,6 @@
 import video from "../assets/backHD.mp4";
 import prx from "../assets/Paper_Rex_darkmode.png";
+import bg2 from '../assets/bg2.mp4'
 
 function Hero() {
     return (
@@ -10,7 +11,7 @@ function Hero() {
                 loop
                 muted
             >
-                <source src={video} type="video/mp4" />
+                <source src={bg2} type="video/mp4" />
             </video>
 
             <div className="hero-overlay bg-opacity-0 absolute top-0 left-0 w-full h-full z-10"></div>
