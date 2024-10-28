@@ -1,22 +1,23 @@
 import React from "react";
 import prx from "../assets/Paper_Rex_darkmode.png";
-import bg2 from '../assets/bg2.mp4';
+import bgHero from "../assets/Wallpaper GIF.gif"
 
 function Hero() {
     const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
-        e.preventDefault(); // Prevent default click behavior
+        e.preventDefault(); 
     };
 
     return (
-        <div className="hero min-h-screen relative flex items-center justify-center overflow-hidden">
-            <video
-                className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-90"
-                autoPlay
-                loop
-                muted
-            >
-                <source src={bg2} type="video/mp4" />
-            </video>
+        <div 
+        className="hero min-h-screen relative flex items-center justify-center overflow-hidden"
+            style={{
+                backgroundImage: `url(${bgHero})`,
+                backgroundSize: "100% 100%", 
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+            }}
+        >
+        
 
             <div className="hero-overlay bg-opacity-0 absolute top-0 left-0 w-full h-full z-10"></div>
 
