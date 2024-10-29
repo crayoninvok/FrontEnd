@@ -22,7 +22,7 @@ function Navbar() {
 
             <ul className='hidden md:flex flex-1 justify-center gap-5 text-black'>
                 <li className="btn btn-ghost text-lg md:text-xl">
-                    <Link to="/">Home</Link>
+                    <Link to="Home">Home</Link>
                 </li>
                 <li className="btn btn-ghost text-lg md:text-xl">
                     <Link to="About">About</Link>

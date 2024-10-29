@@ -5,7 +5,7 @@ import './Style.css';
 import { BrowserRouter } from 'react-router-dom';
 
 const loadGoogleFonts = () => {
-  // Preconnect to Google Fonts
+
   const preconnectGoogle = document.createElement('link');
   preconnectGoogle.rel = 'preconnect';
   preconnectGoogle.href = 'https://fonts.googleapis.com';
@@ -15,12 +15,12 @@ const loadGoogleFonts = () => {
   preconnectGstatic.href = 'https://fonts.gstatic.com';
   preconnectGstatic.crossOrigin = 'true';
 
-  // Load the specified Google Fonts
+
   const link = document.createElement('link');
   link.href = 'https://fonts.googleapis.com/css2?family=Days+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour+Convergence&display=swap';
   link.rel = 'stylesheet';
 
-  // Append links to the document head
+
   document.head.appendChild(preconnectGoogle);
   document.head.appendChild(preconnectGstatic);
   document.head.appendChild(link);
