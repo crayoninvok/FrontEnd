@@ -18,8 +18,8 @@ function About() {
           backgroundPosition: 'center 30%', 
           backgroundRepeat: 'no-repeat'
         }}>
-        <p className="text-white mt-5 text-[13px] md:text-[20px] font-semibold font-open-sans animate-slide-in-left">Get to Know About Me</p>
-        <p className="text-white mt-5 text-[30px] md:text-[70px] font-semibold font-open-sans animate-slide-in-right">WHO AM I?</p> 
+        <p className="text-white mt-5 text-[13px] md:text-[27px] font-semibold font-open-sans animate-slide-in-left">Get to Know About Me</p>
+        <p className="text-white mt-5 text-[50px] md:text-[70px] font-semibold font-open-sans animate-slide-in-right">WHO AM I?</p> 
       </div>
 
       <div className='flex flex-col md:flex-row gap-5 justify-between items-center top-0 w-full px-3 md:px-3 animate-slide-in-bottom'>
